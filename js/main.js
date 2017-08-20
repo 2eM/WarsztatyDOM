@@ -1,11 +1,12 @@
 'use strict';
 
-var paragraf = document.getElementsByClassName('par');
+
 
 //console.log(paragraf);
 
 
 function ustawTlo(){
+var paragraf = document.getElementsByClassName('par');
     paragraf[0].style.backgroundColor='red';
     paragraf[1].style.backgroundColor='green';
 }
