@@ -14,8 +14,16 @@ function ustawTlo(){
 function pobierzImie(event){
     event.preventDefault();
     console.log('Funkcja pobierzImie(event) ');
-    var Imie = document.getElementById('formularz').fname.value ;
-    var Nazwisko = document.getElementById('formularz').lname.value ;
-    console.log('Imię : ' + Imie );
-    console.log('Nazwisko : ' + Nazwisko );
+    var inputTab = document.getElementsByTagName('input');
+    
+    for(var i=0 ; i < inputTab.length ; i++){
+        console.log(inputTab[i]);
+    }
+
+    var imie = inputTab[0].value ;
+    var nazwisko = inputTab[1].value ;
+    
+    console.log(imie);
+    console.log(nazwisko);
+    
 }
